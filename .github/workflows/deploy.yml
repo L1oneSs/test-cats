@@ -26,6 +26,9 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_API_KEY: ${{ secrets.NEXT_PUBLIC_API_KEY }}
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
