@@ -7,4 +7,4 @@ const nextConfig = {
   basePath: "/test-cats",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
